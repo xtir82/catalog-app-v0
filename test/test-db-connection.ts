@@ -1,8 +1,8 @@
-import connectDB from '../lib/db';
+import dbConnect from '../lib/db';
 
 (async () => {
     try {
-        await connectDB();
+        await dbConnect();
         console.log('Connection successful');
         process.exit(0);
     } catch (error) {
